@@ -32,6 +32,16 @@ const reducer = (state = initialState, action) => {
             value: state.value,
             color: value
         }
+    }else if( type === "CHANGEVALUE") {
+        return {
+            value: state.value,
+            color: value
+        }
+    }else if( type === "RESETVALUE") {
+        return {
+            value: value,
+            color: state.color
+        }
     }
     
 

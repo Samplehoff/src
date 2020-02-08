@@ -26,5 +26,6 @@ decrement5Button.addEventListener('click', e => dispatch({ type: "DECREMENT5" })
 const colorDropdown = document.getElementById('colors');
 colorDropdown.addEventListener('change', e => {dispatch({type: "CHANGECOLOR", value: colorDropdown.value})});
 
-
+const startNumber = document.getElementById('whateverIWant');
+startNumber.addEventListener('input', e => dispatch({ type: "RESETVALUE", value: Number(e.target.value)}))
 
