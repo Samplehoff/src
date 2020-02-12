@@ -23,7 +23,11 @@ const reducer = (state = initialState, action) => {
     // Handle actions here - make sure you don't mutate the state!
     const { type } = action;
        if (type === "ADDCIRCLE") {
-           let newState = deepClone(state)
+           let newState = deepClone(state);
+           newState.push({
+               radius: 30,
+               color: "#000000"
+           })
 
            return newState
            // Make a copy of the state and add a circle to the copy
