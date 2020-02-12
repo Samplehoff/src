@@ -29,3 +29,4 @@ colorDropdown.addEventListener('change', e => {dispatch({type: "CHANGECOLOR", co
 const startNumber = document.getElementById('whateverIWant');
 startNumber.addEventListener('input', e => dispatch({ type: "RESETVALUE", value: Number(e.target.value)}))
 
+
